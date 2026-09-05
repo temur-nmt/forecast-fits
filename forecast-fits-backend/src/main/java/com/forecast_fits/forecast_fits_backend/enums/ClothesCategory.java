@@ -11,5 +11,6 @@ public enum ClothesCategory {
     SWEATERS,
     DRESSES,
     TSHIRTS,
-    SHORTS
+    SHORTS,
+    MISC
 }

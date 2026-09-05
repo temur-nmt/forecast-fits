@@ -16,13 +16,17 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Data 
 @Table(name = "clothes")
-@NoArgsConstructor  
+@NoArgsConstructor 
+@AllArgsConstructor  
+@Builder 
 public class Clothes {
     
     @Id 
@@ -36,16 +40,15 @@ public class Clothes {
     @Column(name="userId")
     private int userId;
 
-    @JdbcTypeCode(SqlTypes.JSON)
     @Enumerated(EnumType.STRING)
     @Column(name="categories")
-    private Set<ClothesCategory> categories;
+    private ClothesCategory category;
 
     @Column(name="minTemp")
-    private int min;
+    private int minTemp;
 
     @Column(name="maxTemp")
-    private int max;
+    private int maxTemp;
 
     @JdbcTypeCode(SqlTypes.JSON)
     @Enumerated(EnumType.STRING)

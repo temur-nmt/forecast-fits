@@ -13,5 +13,6 @@ public enum Weather {
     WINTER,
     SUMMER,
     SPRING,
-    AUTUMN
+    AUTUMN,
+    ANY
 }

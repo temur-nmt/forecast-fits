@@ -11,7 +11,7 @@ import lombok.Data;
 public class ClothesDTO {
     private String name;
     private int userId;
-    private Set<ClothesCategory> categories;
+    private ClothesCategory category;
     private int minTemp;
     private int maxTemp;
     private Set<Weather> weather;

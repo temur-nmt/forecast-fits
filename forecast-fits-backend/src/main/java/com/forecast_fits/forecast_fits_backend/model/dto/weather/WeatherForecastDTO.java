@@ -54,7 +54,7 @@ public class WeatherForecastDTO {
     Integer windDirection;
     
     @JsonProperty("wind_speed")
-    Integer windSpeed;
+    Double windSpeed;
     
     @JsonProperty("wind_gust_direction")
     Integer windGustDirection;

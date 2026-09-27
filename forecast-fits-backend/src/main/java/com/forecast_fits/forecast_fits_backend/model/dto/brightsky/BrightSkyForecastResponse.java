@@ -5,8 +5,10 @@ import com.forecast_fits.forecast_fits_backend.model.dto.weather.WeatherForecast
 
 import lombok.Data;
 
+import java.util.List;
+
 @Data 
 public class BrightSkyForecastResponse {
-    WeatherForecastDTO weather;
-    SourceDTO source;
+    List<WeatherForecastDTO> weather;
+    List<SourceDTO> source;
 }

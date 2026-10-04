@@ -30,7 +30,7 @@ public class ClosetController {
 
     @GetMapping("")
     public ResponseEntity<?> getMyCloset(@AuthenticationPrincipal User currentUser) {
-        Optional<List<Clothes>> myClothes = closetService.getMyClothes(currentUser.getId());
+        List<Clothes> myClothes = closetService.getMyClothes(currentUser.getId());
         return ResponseEntity.ok(myClothes);
     }
 

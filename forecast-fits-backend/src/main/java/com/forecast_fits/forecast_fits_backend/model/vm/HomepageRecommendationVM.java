@@ -10,5 +10,5 @@ import java.util.List;
 public class HomepageRecommendationVM {
     private WeatherCurrentVM weather;
     private List<WeatherForecastVM> forecast;
-    private FitReccomendationVM reccomendation;
+    private FitReccomendationVM recomendation;
 }

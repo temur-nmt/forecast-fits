@@ -1,7 +1,6 @@
 package com.forecast_fits.forecast_fits_backend.controller;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;

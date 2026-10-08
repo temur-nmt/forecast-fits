@@ -17,7 +17,6 @@ import com.forecast_fits.forecast_fits_backend.model.dto.brightsky.BrightSkyFore
 import com.forecast_fits.forecast_fits_backend.model.dto.weather.WeatherCurrentDTO;
 import com.forecast_fits.forecast_fits_backend.model.dto.weather.WeatherForecastDTO;
 import com.forecast_fits.forecast_fits_backend.model.entity.Clothes;
-import com.forecast_fits.forecast_fits_backend.model.entity.User;
 import com.forecast_fits.forecast_fits_backend.model.vm.ClothingItemVM;
 import com.forecast_fits.forecast_fits_backend.model.vm.FitReccomendationVM;
 import com.forecast_fits.forecast_fits_backend.model.vm.HomepageRecommendationVM;

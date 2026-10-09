@@ -1,7 +1,6 @@
 package com.forecast_fits.forecast_fits_backend.service;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -17,7 +16,7 @@ public class ClosetService {
 
     private final ClothesRepository clothesRepository;
     
-    public Optional<List<Clothes>> getMyClothes(int userId) {
+    public List<Clothes> getMyClothes(int userId) {
         return clothesRepository.findByUserId(userId);
     }
 

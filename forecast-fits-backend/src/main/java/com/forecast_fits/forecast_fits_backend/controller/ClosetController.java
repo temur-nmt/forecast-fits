@@ -1,7 +1,6 @@
 package com.forecast_fits.forecast_fits_backend.controller;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -30,7 +29,7 @@ public class ClosetController {
 
     @GetMapping("")
     public ResponseEntity<?> getMyCloset(@AuthenticationPrincipal User currentUser) {
-        Optional<List<Clothes>> myClothes = closetService.getMyClothes(currentUser.getId());
+        List<Clothes> myClothes = closetService.getMyClothes(currentUser.getId());
         return ResponseEntity.ok(myClothes);
     }
 

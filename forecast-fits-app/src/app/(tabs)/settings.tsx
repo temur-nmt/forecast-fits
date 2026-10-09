@@ -1,11 +1,7 @@
-import { ScrollView } from "react-native";
+import SettingsScreen from "@/features/settings/screens/settings-screen";
 
-const Settings = () => {
-    return (
-        <ScrollView>
-
-        </ScrollView>
-    )
+const SettingsPage = () => {
+    return <SettingsScreen/>
 };
 
-export default Settings;
+export default SettingsPage;

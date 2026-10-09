@@ -1,11 +1,7 @@
-import { ScrollView } from "react-native";
+import ClosetScreen from "@/features/closet/screens/closet-screen";
 
-const Closet = () => {
-    return (
-        <ScrollView>
-
-        </ScrollView>
-    )
+const ClosetPage = () => {
+    return <ClosetScreen/>
 };
 
-export default Closet;
+export default ClosetPage;

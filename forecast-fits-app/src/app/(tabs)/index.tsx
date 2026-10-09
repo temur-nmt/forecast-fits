@@ -1,11 +1,7 @@
-import { Text, View } from 'react-native';
+import HomeScreen from '@/features/home/screens/home-screen';
 
-const HomeScreen = () => {
-  return (
-    <View className='flex justify-center items-center h-full w-full'>
-      <Text>Welcome to Expo</Text>
-    </View>
-  );
-}
+const HomePage = () => {
+  return <HomeScreen/>
+};
 
-export default HomeScreen;
+export default HomePage;

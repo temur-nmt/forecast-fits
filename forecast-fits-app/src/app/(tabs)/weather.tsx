@@ -1,11 +1,7 @@
-import { View } from "react-native";
+import WeatherScreen from "@/features/weather/screens/weather-screen";
 
-const Weather = () => {
-    return (
-        <View>
-
-        </View>
-    )
+const WeatherPage = () => {
+    return WeatherScreen
 };
 
-export default Weather;
+export default WeatherPage;

@@ -1,6 +1,6 @@
 import { ScrollView } from "react-native";
 
-const Basket = () => {
+const BasketPage = () => {
     return (
         <ScrollView>
 
@@ -8,4 +8,4 @@ const Basket = () => {
     )
 };
 
-export default Basket;
+export default BasketPage;

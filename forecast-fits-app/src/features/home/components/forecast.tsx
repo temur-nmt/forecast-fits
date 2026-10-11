@@ -7,7 +7,7 @@ const ForecastWeather = ({ forecast }: { forecast: ForecastVM[] }) => {
     const currentHour = new Date().getHours();
     const upcomingForecast = forecast.filter(item => {
         const localDate = new Date(item.time);
-        return localDate.getHours() >= currentHour;
+        return (localDate.getHours() >= currentHour) || localDate.getHours() == 0;
     });
 
     return (

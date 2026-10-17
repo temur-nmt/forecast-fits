@@ -86,7 +86,7 @@ const HomeScreen = () => {
             {recommendation ? (
                 <>
                     <WeatherSection weather={recommendation.weather} forecast={recommendation.forecast}/>
-                    <RecommendationSection/>
+                    <RecommendationSection {...recommendation.recommendation}/>
                 </>
             ) : (
                 <View className='flex flex-col justify-center items-center h-full w-full'>
